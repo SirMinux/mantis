@@ -1,4 +1,4 @@
-FROM php:5-apache
+FROM php:5.6.36-apache
 
 RUN apt-get update && apt-get upgrade -y
 RUN docker-php-ext-install -j$(nproc) iconv mbstring
